@@ -28,6 +28,20 @@
         .link:hover {
             text-decoration: underline;
         }
+        .links-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .link-card {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+            min-width: 150px;
+        }
     </style>
 </head>
 <body>
@@ -37,14 +51,23 @@
     </div>
     
     <div class="content">
-        <h2>Privacy Policy</h2>
-        <p>View our privacy policy: <a href="PRIVACY_POLICY.html" class="link">Privacy Policy</a></p>
+        <h2>Important Links</h2>
+        <div class="links-section">
+            <div class="link-card">
+                <h3>Privacy Policy</h3>
+                <p><a href="PRIVACY_POLICY.html" class="link">View Policy</a></p>
+            </div>
+            <div class="link-card">
+                <h3>Support</h3>
+                <p><a href="SUPPORT.html" class="link">Get Help</a></p>
+            </div>
+        </div>
         
         <h2>About Stoivyn</h2>
         <p>Stoivyn helps you build daily habits and track your progress toward the four cardinal virtues of Stoicism: Wisdom, Courage, Justice, and Temperance.</p>
         
         <h2>Repository</h2>
-        <p>This is the repository for the Stoivyn iOS app. The privacy policy is hosted here for App Store compliance.</p>
+        <p>This is the repository for the Stoivyn iOS app. The privacy policy and support pages are hosted here for App Store compliance.</p>
     </div>
 </body>
 </html>
